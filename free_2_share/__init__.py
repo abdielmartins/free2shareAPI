@@ -5,6 +5,7 @@ from config import config_selector
 
 from free_2_share.configurations import database
 from free_2_share.configurations import migration
+from free_2_share.configurations import serializer
 
 
 def create_app():
@@ -14,5 +15,5 @@ def create_app():
 
     database.init_app(app)
     migration.init_app(app)
-
+    serializer.init_app(app)
     return app
