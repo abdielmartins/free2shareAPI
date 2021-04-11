@@ -7,7 +7,7 @@ from free_2_share.configurations import database
 from free_2_share.configurations import migration
 from free_2_share.configurations import serializer
 
-from free_2_share import views
+from free_2_share.configurations import views
 
 
 def create_app():
