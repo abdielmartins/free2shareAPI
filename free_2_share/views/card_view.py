@@ -36,7 +36,26 @@ class Card(Resource):
 
     def patch(self, card_id):
         parse = reqparse.RequestParser()
+        parse.add_argument("name", type=str)
+        parse.add_argument("promotion_link", type=str)
+        parse.add_argument("card_banner_link", type=str)
 
+        args = parse.parse_args()
 
-    def delete(self):
-        ...
+        card = CardModel.query.get_or_404(card_id)
+
+        for key, value in args.items():
+            if value:
+                setattr(card, key, value)
+
+        session = current_app.db.session
+        session.add(card)
+        session.commit()
+        serializer = card_schema.dump(card)
+        return {"data": serializer}, HTTPStatus.OK
+
+    def delete(self, card_id):
+        card = CardModel.query.get_or_404(card_id)
+        session = current_app.db.session
+        session.delete(card)
+        session.commit()
