@@ -14,6 +14,8 @@ class UserModel(db.Model):
     link_profile_picture = db.Column(db.String, nullable=False)
     bio = db.Column(db.Text, nullable=False)
 
+    favorites_list = db.relationship("FavoriteModel", backref=db.backref("favorite_list", lazy="joined"), lazy="joined")
+
     @property
     def password(self):
         raise TypeError("A senha não pode ser acessada")

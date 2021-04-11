@@ -10,4 +10,8 @@ class CardModel(db.Model):
     card_banner_link = db.Column(db.String, nullable=False)
 
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+
     author = db.relationship("UserModel", backref=db.backref("card_list", lazy="joined"), lazy="joined")
+    favorited_by = db.relationship(
+        "FavoriteModel", backref=db.backref("favorited_by_list", lazy="joined"), lazy="joined"
+    )
