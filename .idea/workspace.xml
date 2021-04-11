@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46569867-b19c-4a45-8a4d-fecb31d5ac59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/free_2_share/schema/card_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/free_2_share/views/card_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/free_2_share/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/free_2_share/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/free_2_share/configurations/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/free_2_share/configurations/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/free_2_share/schema/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/free_2_share/schema/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/free_2_share/views/user_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/free_2_share/views/user_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618167248421</updated>
-      <workItem from="1618167257450" duration="4542000" />
+      <workItem from="1618167257450" duration="4697000" />
     </task>
     <servers />
   </component>
