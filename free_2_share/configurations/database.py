@@ -8,4 +8,5 @@ def init_app(app: Flask):
     db.init_app(app)
     app.db = db
 
-    ## models import bellow
+    from free_2_share.models.user_model import UserModel
+    from free_2_share.models.card_model import CardModel

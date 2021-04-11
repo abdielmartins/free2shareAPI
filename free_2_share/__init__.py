@@ -3,8 +3,8 @@ from os import getenv
 
 from config import config_selector
 
-from app.configurations import database
-from app.configurations import migration
+from free_2_share.configurations import database
+from free_2_share.configurations import migration
 
 
 def create_app():
