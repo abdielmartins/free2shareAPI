@@ -10,3 +10,4 @@ def init_app(app: Flask):
 
     from free_2_share.models.user_model import UserModel
     from free_2_share.models.card_model import CardModel
+    from free_2_share.models.favorite_model import FavoriteModel
