@@ -277,6 +277,24 @@ lint = ["mypy (==0.812)", "flake8 (==3.9.0)", "flake8-bugbear (==21.3.2)", "pre-
 tests = ["pytest", "pytz", "simplejson"]
 
 [[package]]
+name = "marshmallow-sqlalchemy"
+version = "0.24.2"
+description = "SQLAlchemy integration with the marshmallow (de)serialization library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+marshmallow = ">=3.0.0"
+SQLAlchemy = ">=1.2.0"
+
+[package.extras]
+dev = ["pytest", "pytest-lazy-fixture", "flake8 (==3.8.4)", "flake8-bugbear (==20.11.1)", "pre-commit (>=2.0,<3.0)", "tox"]
+docs = ["sphinx (==3.4.3)", "alabaster (==0.7.12)", "sphinx-issues (==1.2.0)"]
+lint = ["flake8 (==3.8.4)", "flake8-bugbear (==20.11.1)", "pre-commit (>=2.0,<3.0)"]
+tests = ["pytest", "pytest-lazy-fixture"]
+
+[[package]]
 name = "more-itertools"
 version = "8.7.0"
 description = "More routines for operating on iterables, beyond itertools"
@@ -514,7 +532,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "cb50d0bfb8963a705b474670526f73677ef893b840b996def079869022964d19"
+content-hash = "2759cc82e44d9c15ecd6f6ab5257ec738b06c5def844fc33df217a046bf68a5f"
 
 [metadata.files]
 alembic = [
@@ -690,6 +708,10 @@ markupsafe = [
 marshmallow = [
     {file = "marshmallow-3.11.1-py2.py3-none-any.whl", hash = "sha256:0dd42891a5ef288217ed6410917f3c6048f585f8692075a0052c24f9bfff9dfd"},
     {file = "marshmallow-3.11.1.tar.gz", hash = "sha256:16e99cb7f630c0ef4d7d364ed0109ac194268dde123966076ab3dafb9ae3906b"},
+]
+marshmallow-sqlalchemy = [
+    {file = "marshmallow-sqlalchemy-0.24.2.tar.gz", hash = "sha256:ee3ead3b83de6608c6850ff60515691b0dc556ca226680f8a82b9f785cdb71b1"},
+    {file = "marshmallow_sqlalchemy-0.24.2-py2.py3-none-any.whl", hash = "sha256:b217c6327bcf291e843dc1c2c20f0915061d4ecc303f0c5be40f23206607f702"},
 ]
 more-itertools = [
     {file = "more-itertools-8.7.0.tar.gz", hash = "sha256:c5d6da9ca3ff65220c3bfd2a8db06d698f05d4d2b9be57e1deb2be5a45019713"},
