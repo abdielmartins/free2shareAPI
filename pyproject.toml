@@ -16,6 +16,7 @@ Flask-RESTful = "^0.3.8"
 marshmallow = "^3.11.1"
 flask-marshmallow = "^0.14.0"
 marshmallow-sqlalchemy = "^0.24.2"
+Faker = "^8.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
