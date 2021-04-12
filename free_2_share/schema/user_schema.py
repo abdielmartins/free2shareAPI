@@ -13,7 +13,7 @@ class UserSchema(ma.Schema):
     phone = ma.String()
     link_profile_picture = ma.String()
     bio = ma.String()
-    favorites_list = ma.List()
+    # favorites_list = ma.List()
 
 
 user_schema = UserSchema()

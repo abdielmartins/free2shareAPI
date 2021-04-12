@@ -10,7 +10,7 @@ from free_2_share.schema.user_schema import user_schema, users_schema
 class AllUsers(Resource):
     def get(self):
         all_users = UserModel.query.all()
-        serializer = user_schema.dump(all_users)
+        serializer = users_schema.dump(all_users)
 
         return {"data": serializer}, HTTPStatus.OK
 
@@ -29,20 +29,18 @@ class User(Resource):
         parse.add_argument("email", type=str, required=True)
         parse.add_argument("password", type=str, required=True)
         parse.add_argument("phone", type=str, required=True)
-        parse.add_argument("profile_pic_url", type=str, required=True)
+        parse.add_argument("link_profile_picture", type=str, required=True)
         parse.add_argument("bio", type=str, required=True)
 
         kwargs = parse.parse_args()
 
         new_user = UserModel(
-            UserModel(
-                name=kwargs.name,
-                nickname=kwargs.nickname,
-                email=kwargs.email,
-                phone=kwargs.phone,
-                link_profile_picture=kwargs.profile_pic_url,
-                bio=kwargs.bio,
-            )
+            name=kwargs.name,
+            nickname=kwargs.nickname,
+            email=kwargs.email,
+            phone=kwargs.phone,
+            link_profile_picture=kwargs.link_profile_picture,
+            bio=kwargs.bio,
         )
 
         new_user.password = kwargs.password
@@ -62,7 +60,7 @@ class User(Resource):
         parse.add_argument("email", type=str)
         parse.add_argument("password", type=str)
         parse.add_argument("phone", type=str)
-        parse.add_argument("profile_pic_url", type=str)
+        parse.add_argument("link_profile_picture", type=str)
         parse.add_argument("bio", type=str)
 
         kwargs = parse.parse_args()
@@ -89,3 +87,5 @@ class User(Resource):
         session = current_app.db.session
         session.delete(user)
         session.commit()
+
+        return {"data": f"User {user_id} has successfully been deleted"}, HTTPStatus.OK
