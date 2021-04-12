@@ -7,6 +7,11 @@ from free_2_share.models.favorite_model import FavoriteModel
 
 
 def init_app(app: Flask):
-    cli_db_group = AppGroup('user')
+    cli_db_user = AppGroup('user')
 
-    session = Flask.cirr
+    session = app.db.session
+
+    @cli_db_user.command("create")
+    @argument("quantity")
+    def create_users(quantity):
+        ...

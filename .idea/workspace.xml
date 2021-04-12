@@ -4,7 +4,7 @@
     <list default="true" id="46569867-b19c-4a45-8a4d-fecb31d5ac59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/free_2_share/configurations/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/free_2_share/configurations/commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/free_2_share/configurations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/free_2_share/configurations/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/free_2_share/views/card_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/free_2_share/views/card_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618167248421</updated>
       <workItem from="1618167257450" duration="7403000" />
-      <workItem from="1618177030122" duration="7746000" />
+      <workItem from="1618177030122" duration="8365000" />
     </task>
     <servers />
   </component>

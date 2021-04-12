@@ -59,3 +59,4 @@ class Card(Resource):
         session = current_app.db.session
         session.delete(card)
         session.commit()
+        return {"msg": f" the Card {card_id} has been successfully deleted"}, HTTPStatus.OK
