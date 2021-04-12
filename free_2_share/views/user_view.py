@@ -77,7 +77,7 @@ class User(Resource):
         if kwargs.password:
             setattr(user, "password", kwargs.password)
 
-        session.current_app.db.session
+        session = current_app.db.session
         session.add(user)
         session.commit()
         serializer = user_schema.dump(user)
